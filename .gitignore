@@ -1,0 +1,14 @@
+node_modules/
+auth_whatsapp/
+transcripts/*.jsonl
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+.DS_Store
+opencode.json
+.secure-openclaw/
+dist/
+.next/
+out/
