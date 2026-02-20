@@ -1,0 +1,32 @@
+{
+  "name": "openclawd",
+  "version": "1.0.0",
+  "description": "OpenClawD — Assistente de IA pessoal 24x7 com WhatsApp, Telegram, memória persistente e 500+ integrações",
+  "type": "module",
+  "main": "gateway.js",
+  "bin": {
+    "openclawd": "./cli.js"
+  },
+  "scripts": {
+    "start": "node gateway.js",
+    "chat": "node cli.js chat",
+    "setup": "node cli.js setup",
+    "cli": "node cli.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.1.0",
+    "@composio/core": "latest",
+    "@opencode-ai/sdk": "latest",
+    "@whiskeysockets/baileys": "^6.7.16",
+    "dotenv": "^17.2.4",
+    "node-telegram-bot-api": "^0.66.0",
+    "oh-my-logo": "^0.4.0",
+    "pino": "^9.6.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "zod": "^3.24.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

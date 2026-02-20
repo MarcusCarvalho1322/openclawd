@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/telegram-webhook", "dest": "/api/telegram-webhook.js" },
+    { "src": "/api/status", "dest": "/api/status.js" },
+    { "src": "/api/setup-webhook", "dest": "/api/setup-webhook.js" },
+    { "src": "/", "dest": "/api/status.js" }
+  ],
+  "functions": {
+    "api/telegram-webhook.js": {
+      "maxDuration": 60
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
